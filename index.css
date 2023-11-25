@@ -107,6 +107,8 @@ span {
 
 img{
     width: 400px;
+    transition: transform 0.3s ease-in-out;
+
 }
 .images{
     display: flex;
@@ -115,6 +117,12 @@ img{
 .project{
     text-align: center;
     margin: 0px;
+    position: relative;
+    overflow: hidden;
+}
+
+.project:hover img {
+    transform: scale(1.05);
 }
 #project-title{
     font-size:26px;
@@ -129,10 +137,12 @@ footer {
     justify-content: center;
     align-items: center;
     height: 100%;
+   
 }
 
 .socials {
     text-align: center;
+ 
 
 }
 
@@ -178,6 +188,8 @@ figure img {
     border-radius: 180px;
     
 }
+
+
 
 
 
@@ -280,10 +292,12 @@ ul{
 
 .about-clicked .socials {
     border: 2px solid white;
+    border-radius: 16px;
     margin-left: 40%;
     margin-right: 10%;
     margin-top: 85px;
     padding: 0px 40px;
+   
 }
 
 .about-clicked footer {
